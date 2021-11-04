@@ -6,31 +6,31 @@ Using the STAR manual, investigate the parameters of the STAR command to answer 
 
 1. Below is the script we ran in class to create the genome index for alignment with STAR. We have added line numbers to the script to answer the questions that follow (you will need to refer to the online manual for STAR to answer these questions):
 
-  ```
-  (1)  #!/bin/bash
-  
-  (2)  #SBATCH -p priority # partition name
-  (3)  #SBATCH -t 0-2:00 # days-hours:minutes runlimit after which job will be killed.
-  (4)  #SBATCH -c 6 # number of cores requested
-  (5)  #SBATCH --job-name STAR_index         # Job name
-  (6)  #SBATCH -o %j.out       # File to which standard out will be written
-  (7)  #SBATCH -e %j.err       # File to which standard err will be written
-  
-  (8)  STAR --runThreadN 6 \
-  (9)  --runMode genomeGenerate \
-  (10) --genomeDir my_genome_index \
-  (11) --genomeFastaFiles chr1.fa \
-  (12) --sjdbGTFfile chr1-hg19_genes.gtf \
-  (13) --sjdbOverhang 99
-  ```
+    ```
+    (1)  #!/bin/bash
+    
+    (2)  #SBATCH -p priority # partition name
+    (3)  #SBATCH -t 0-2:00 # days-hours:minutes runlimit after which job will be killed.
+    (4)  #SBATCH -c 6 # number of cores requested
+    (5)  #SBATCH --job-name STAR_index         # Job name
+    (6)  #SBATCH -o %j.out       # File to which standard out will be written
+    (7)  #SBATCH -e %j.err       # File to which standard err will be written
+    
+    (8)  STAR --runThreadN 6 \
+    (9)  --runMode genomeGenerate \
+    (10) --genomeDir my_genome_index \
+    (11) --genomeFastaFiles chr1.fa \
+    (12) --sjdbGTFfile chr1-hg19_genes.gtf \
+    (13) --sjdbOverhang 99
+    ```
 
-  a. Which line number(s) in the script would you change if you were aligning your reads to the entire genome (instead of chr1)?
-
-  b. Provide the modified lines you would use in the script to use reference files from `/n/groups/shared_databases` on O2.
-
-  c. Could you run this indexing/alignment in STAR if you had no GTF annotation file? If so, which line(s) would change, and how would the line(s) change? 
-
-  d. Which line(s) in the script would you change if the length of your reads were 150nt? How would the line(s) change? 
+    a. Which line number(s) in the script would you change if you were aligning your reads to the entire genome (instead of chr1)?
+    
+    b. Provide the modified lines you would use in the script to use reference files from `/n/groups/shared_databases` on O2.
+    
+    c. Could you run this indexing/alignment in STAR if you had no GTF annotation file? If so, which line(s) would change, and how would the line(s) change? 
+    
+    d. Which line(s) in the script would you change if the length of your reads were 150nt? How would the line(s) change? 
 
 
 
