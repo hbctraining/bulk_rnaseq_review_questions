@@ -2,11 +2,10 @@
 
 We have downloaded the raw FASTQ files from the SRA for the sequencing data used in the paper: [Silencing SMOC2 ameliorates kidney fibrosis by inhibiting fibroblast to myofibroblast transformation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5396522/). The paper explores kidney fibrosis in wildtype and SMOC2-overexpressing mice. 
 
-  **a.** Copy the `/n/groups/hbctraining/kidney_fibrosis_rnaseq.tar.gz` folder to your own `/n/scratch3` directory. Look inside the directory, you should find the following:
+  **a.** Copy the `/n/groups/hbctraining/kidney_fibrosis_rnaseq.tar.gz` folder to your own `/n/scratch3` directory. Decompress and look inside the directory, you should find the following:
 
    * data folder with the raw fastq files
    * meta folder with a metadata file containing information about each of the samples
-   * reference_transcriptome folder containing the transcriptome FASTA
 
   **b.** Setup a file system structure your project (i.e. create subdirectories and additional directories where you feel is necessary). 
 
