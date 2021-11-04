@@ -14,6 +14,7 @@ We have downloaded the raw FASTQ files from the SRA for the sequencing data used
    * Run FastQC
    * Generate abundance estimates with Salmon (be sure to include the parameter to generate bootstraps)
    * Evaluate the MultiQC report
+   
    _**HINT:** You will need to create a mouse index for Salmon._
 
   **d.** Use the Salmon quant files to perform differential gene expression analysis with DESeq2. Report the DE genes identified for SMOC2 over-expressing samples relative to wild type using an FDR threshold of 0.05, by uploading a csv file containing the results table output by DESeq2,but only for the significant genes.
