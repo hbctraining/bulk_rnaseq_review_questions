@@ -69,11 +69,11 @@ Using the STAR manual, investigate the parameters of the STAR command to answer 
 
 3. Use vim to create a script by copying and pasting the contents of [this page](https://steve-parker.org/sh/eg/var3.sh.txt). Call it `pos_param_test.sh`. Run the new script as follows and report back on what the contents of the variable `$0`, `$1`, `$2` and `$@` are in each case.
 
-a. `sh pos_param_test.sh ngs_course 2018 "4" 6`
+  a. `sh pos_param_test.sh ngs_course 2018 "4" 6`
 
-b. `sh pos_param_test.sh this is easy to understand`
+  b. `sh pos_param_test.sh this is easy to understand`
 
-c. `sh pos_param_test.sh 3 x 5 = 15 , 5 x 5 = 25`
+  c. `sh pos_param_test.sh 3 x 5 = 15 , 5 x 5 = 25`
 
 
 4. Open up vim to create a shell script called `run_salmon_single sample.sh`. Add a shebang line to the top of your script. Copy and paste the Salmon command below into this script and assume it is running on a file called `Mov10_oe_1.subset.fq`. 
